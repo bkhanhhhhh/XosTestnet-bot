@@ -1,5 +1,5 @@
 import asyncio
-import os
+import os 
 import subprocess 
 
 current_dir = os.path.dirname(os.path.abspath(__file__))
@@ -53,6 +53,7 @@ async def main():
                 tasks.append(asyncio.create_task(secret_word(secret_words=secret_words, session_name=session_name, phone_number=phone_number, thread=thread, proxy=proxy)))
 
         await asyncio.gather(*tasks)
+
 
 
 
